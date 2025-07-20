@@ -129,3 +129,4 @@ See [the wiki](https://github.com/tbroyer/gradle-jooq-plugin/wiki) for recipes o
 `configurationFile`  | `src/jooq-codegen.xml`, if the `java` plugin is applied | | The configuration file to use
 `encoding`           | the `options.encoding` value of the `compileJava` task, if the `java` plugin is applied; `UTF-8` otherwise (and as a fallback) | | The encoding of the generated files
 `outputDirectory`    | `src/main/jooq`, if the `java` plugin is applied | | The directory where jOOQ will generate the code
+`javaLauncher`       | Based on the project's `java.toolchain`, if the `java-base` plugin is applied | | The java executable used to run jOOQ.
