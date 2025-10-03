@@ -1,18 +1,18 @@
 # https://docs.gradle.org/current/userguide/platforms.html#sub::toml-dependencies-format
 # Try to maintain entries sorted alphabetically inside each "group".
 [versions]
-googleJavaFormat = "1.28.0"
-h2 = "2.3.232"
-jooq = "3.20.6"
+googleJavaFormat = "1.29.0"
+h2 = "2.4.240"
+jooq = "3.20.8"
 junit-jupiter = "5.13.4"
 ktlint = "1.7.1"
 
 [libraries]
-errorprone = "com.google.errorprone:error_prone_core:2.41.0"
+errorprone = "com.google.errorprone:error_prone_core:2.42.0"
 h2 = { module = "com.h2database:h2", version.ref = "h2" }
 jooq-codegen = { module = "org.jooq:jooq-codegen", version.ref = "jooq" }
-nullaway = "com.uber.nullaway:nullaway:0.12.9"
-truth = "com.google.truth:truth:1.4.4"
+nullaway = "com.uber.nullaway:nullaway:0.12.10"
+truth = "com.google.truth:truth:1.4.5"
 
 # Versions used in build script, libraries added here for Dependabot
 junit-jupiter-api = { module = "org.junit.jupiter:junit-jupiter-api", version.ref="junit-jupiter" }
