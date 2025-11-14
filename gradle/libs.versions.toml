@@ -3,9 +3,9 @@
 [versions]
 googleJavaFormat = "1.32.0"
 h2 = "2.4.240"
-jooq = "3.20.8"
+jooq = "3.20.9"
 junit-jupiter = "6.0.1"
-ktlint = "1.7.1"
+ktlint = "1.8.0"
 
 [libraries]
 errorprone = "com.google.errorprone:error_prone_core:2.44.0"
