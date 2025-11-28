@@ -8,7 +8,7 @@ junit-jupiter = "6.0.1"
 ktlint = "1.8.0"
 
 [libraries]
-errorprone = "com.google.errorprone:error_prone_core:2.44.0"
+errorprone = "com.google.errorprone:error_prone_core:2.45.0"
 h2 = { module = "com.h2database:h2", version.ref = "h2" }
 jooq-codegen = { module = "org.jooq:jooq-codegen", version.ref = "jooq" }
 nullaway = "com.uber.nullaway:nullaway:0.12.12"
