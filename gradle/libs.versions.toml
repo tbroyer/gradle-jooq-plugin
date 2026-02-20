@@ -4,7 +4,7 @@
 googleJavaFormat = "1.34.1"
 h2 = "2.4.240"
 jooq = "3.20.11"
-junit-jupiter = "6.0.2"
+junit-jupiter = "6.0.3"
 ktlint = "1.8.0"
 
 [libraries]
