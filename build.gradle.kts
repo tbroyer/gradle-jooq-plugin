@@ -1,5 +1,6 @@
 import net.ltgt.gradle.errorprone.errorprone
 import org.gradle.api.tasks.testing.logging.TestExceptionFormat
+import org.gradle.plugin.compatibility.compatibility
 
 plugins {
     `java-gradle-plugin`
@@ -117,6 +118,11 @@ gradlePlugin {
             displayName = "Gradle plugin for jOOQ code generation (for Java projects)"
             description = "Adds a Gradle task to generate Java code from a database schema using jOOQ"
             tags.addAll("jooq", "jooq-codegen")
+            compatibility {
+                features {
+                    configurationCache = true
+                }
+            }
         }
         register("jooq-kotlin") {
             id = "net.ltgt.jooq-kotlin"
@@ -124,6 +130,11 @@ gradlePlugin {
             displayName = "Gradle plugin for jOOQ code generation (for Kotlin projects)"
             description = "Adds a Gradle task to generate Kotlin code from a database schema using jOOQ"
             tags.addAll("jooq", "jooq-codegen")
+            compatibility {
+                features {
+                    configurationCache = true
+                }
+            }
         }
     }
 }
