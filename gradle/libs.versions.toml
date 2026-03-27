@@ -3,7 +3,7 @@
 [versions]
 googleJavaFormat = "1.35.0"
 h2 = "2.4.240"
-jooq = "3.20.11"
+jooq = "3.21.1"
 junit-jupiter = "6.0.3"
 ktlint = "1.8.0"
 
