@@ -3,7 +3,7 @@
 [versions]
 googleJavaFormat = "1.35.0"
 h2 = "2.4.240"
-jooq = "3.21.4"
+jooq = "3.21.5"
 junit-jupiter = "6.1.0"
 ktlint = "1.8.0"
 
@@ -11,7 +11,7 @@ ktlint = "1.8.0"
 errorprone = "com.google.errorprone:error_prone_core:2.49.0"
 h2 = { module = "com.h2database:h2", version.ref = "h2" }
 jooq-codegen = { module = "org.jooq:jooq-codegen", version.ref = "jooq" }
-nullaway = "com.uber.nullaway:nullaway:0.13.4"
+nullaway = "com.uber.nullaway:nullaway:0.13.6"
 truth = "com.google.truth:truth:1.4.5"
 
 # Versions used in build script, libraries added here for Dependabot
@@ -23,6 +23,6 @@ ktlint = { module = "com.pinterest.ktlint:ktlint-cli", version.ref = "ktlint" }
 
 [plugins]
 errorprone = "net.ltgt.errorprone:5.1.0"
-nullaway = "net.ltgt.nullaway:3.0.0"
+nullaway = "net.ltgt.nullaway:3.1.0"
 gradlePluginPublish = "com.gradle.plugin-publish:2.1.1"
 spotless = "com.diffplug.spotless:8.6.0"
