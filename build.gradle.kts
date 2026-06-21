@@ -66,14 +66,16 @@ testing {
             }
         }
 
-        val test by getting(JvmTestSuite::class) {
-            dependencies {
-                implementation(project())
-                implementation(project.dependencies.embeddedKotlin("gradle-plugin") as String)
+        val test =
+            named<JvmTestSuite>("test") {
+                val kotlinGradlePlugin = project.dependencies.embeddedKotlin("gradle-plugin") as String
+                dependencies {
+                    implementation(project())
+                    implementation(kotlinGradlePlugin)
+                }
             }
-        }
 
-        val functionalTest by registering(JvmTestSuite::class) {
+        register<JvmTestSuite>("functionalTest") {
             dependencies {
                 implementation(gradleTestKit())
                 implementation(libs.h2)
