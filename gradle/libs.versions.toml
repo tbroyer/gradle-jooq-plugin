@@ -1,9 +1,9 @@
 # https://docs.gradle.org/current/userguide/platforms.html#sub::toml-dependencies-format
 # Try to maintain entries sorted alphabetically inside each "group".
 [versions]
-googleJavaFormat = "1.35.0"
+googleJavaFormat = "1.36.1"
 h2 = "2.4.240"
-jooq = "3.21.6"
+jooq = "3.21.7"
 junit-jupiter = "6.1.2"
 ktlint = "1.8.0"
 
