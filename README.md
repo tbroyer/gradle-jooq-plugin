@@ -60,9 +60,10 @@ idea {
 
 ## Compatibility
 
- * Gradle >= 8.4 (including Gradle 9)
+ * Gradle >= 8.4 (including Gradle 9; though it's currently only tested with the subset of versions covered by the [Gradle Security Subscription](https://gradle.org/security-subscription/))
  * Java >= 8 (though it's currently only tested with Java >= 11)
- * jOOQ >= 3.16 (but should be compatible with earlier versions, as long as jOOQ is backwards compatible), built and tested against jOOQ Open Source Edition but should be compatible with commercial edtions.
+ * built and tested against the latest jOOQ Open Source Edition but should be compatible with commercial editions, and with earlier versions as long as jOOQ is backwards compatible
+   (there hasn't been any required change to the plugin's code since 3.16).
 
 ## Usage
 
