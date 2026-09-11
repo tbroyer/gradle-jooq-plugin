@@ -123,6 +123,7 @@ gradlePlugin {
             compatibility {
                 features {
                     configurationCache = true
+                    isolatedProjects = true
                 }
             }
         }
@@ -135,6 +136,7 @@ gradlePlugin {
             compatibility {
                 features {
                     configurationCache = true
+                    isolatedProjects = true
                 }
             }
         }
