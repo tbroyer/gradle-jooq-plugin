@@ -121,13 +121,12 @@ class JooqBasePlugin implements Plugin<Project> {
   private void configureMainSourceSetDefaults(Project project, TaskProvider<JooqCodegen> task) {
     Directory outputDirectory = project.getLayout().getProjectDirectory().dir("src/main/jooq");
 
-    task.configure(
-        jooqCodegen -> {
-          jooqCodegen
-              .getConfigurationFile()
-              .convention(project.getLayout().getProjectDirectory().file("src/jooq-codegen.xml"));
-          jooqCodegen.getOutputDirectory().convention(outputDirectory);
-        });
+    task.configure(jooqCodegen -> {
+      jooqCodegen
+          .getConfigurationFile()
+          .convention(project.getLayout().getProjectDirectory().file("src/jooq-codegen.xml"));
+      jooqCodegen.getOutputDirectory().convention(outputDirectory);
+    });
 
     project
         .getPluginManager()

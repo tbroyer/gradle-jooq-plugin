@@ -47,19 +47,17 @@ class JooqPlugin implements Plugin<Project> {
     // reconfigured)
     mainSourceSet.getJava().srcDir(project.provider(() -> task.get().getOutputDirectory().get()));
 
-    task.configure(
-        jooqCodegen ->
-            jooqCodegen
-                .getEncoding()
-                .convention(
-                    // Using project.provider to avoid creating a task dependency
-                    project.provider(
-                        () ->
-                            project
-                                .getTasks()
-                                .named(mainSourceSet.getCompileJavaTaskName(), JavaCompile.class)
-                                .get()
-                                .getOptions()
-                                .getEncoding())));
+    task.configure(jooqCodegen ->
+        jooqCodegen
+            .getEncoding()
+            .convention(
+                // Using project.provider to avoid creating a task dependency
+                project.provider(() ->
+                    project
+                        .getTasks()
+                        .named(mainSourceSet.getCompileJavaTaskName(), JavaCompile.class)
+                        .get()
+                        .getOptions()
+                        .getEncoding())));
   }
 }
